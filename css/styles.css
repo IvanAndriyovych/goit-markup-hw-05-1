@@ -281,11 +281,16 @@ height: 48px;
     flex-wrap: wrap;
     gap: 24px;
    row-gap: 48px;
+  
     
 
 }
 
 .type-portfolio {
+
+   display: block;
+    max-width: 100%;
+    height: auto;
     position: relative;
    
   
@@ -294,8 +299,10 @@ height: 48px;
 }
 
 .top-portfolio {
+
     position: relative;
     overflow: hidden;
+   
 }
 
 
@@ -1092,4 +1099,14 @@ margin-bottom: 16px;
 .solt-title-link:focus {
     background-color: #31D0AA;
 
+}
+
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+ background: rgba(46, 47, 66, 0.4);
+   
 }
