@@ -59,7 +59,7 @@
     <div class="basis-main">
         <div class="container">
             <h1 class="title-main">Effective Solutions <br> for your business</h1>
-            <button class="order" type="button">Order service</button>
+            <button class="order" type="button"data-modal-open>Order service</button>
           
         </div></div>
     
@@ -338,15 +338,17 @@
       </div>
      
       </footer>
-      <div class="backdrop"></div>
-      <div class="model">
-        <button type="button" class="model-close"></button>
-
+      <div class="backdrop"data-modal>
+        <div class="model">
+            <button type="button" class="model-close"data-modal-close>X</button>
+    
+          </div>
       </div>
+     
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
       </script> 
-
+ <script src="./js/modal.js"></script>
 </body>
 </html>
