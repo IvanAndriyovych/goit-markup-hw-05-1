@@ -221,7 +221,7 @@ border-radius: 4px;
     background-color: #4D5AE5;
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border: 1px solid #E7E9FC;
+    border: 1px solid #4D5AE5;
     
    
 } 
@@ -251,6 +251,7 @@ padding-left: 24px;
 height: 48px;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .desings {
@@ -365,7 +366,7 @@ padding-bottom: 32px;
 .type-portfolio-title {
     color: #2E2F42;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
@@ -506,6 +507,11 @@ font-family: 'Roboto', sans-serif;
     
     }
 
+    .logo-footer:hover,
+.logo-footer:focus {
+    color: #404BBF
+}
+
 .logo-main {color: #2E2F42;
     font-weight: 800;
     font-size: 18px;
@@ -640,6 +646,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .basis-main {
+    max-width: 1440px;
+    margin: 0 auto;
     background: #2E2F42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -927,12 +935,14 @@ margin-bottom: 8px;
     display: flex;
     justify-content: center;
     gap: 24px;
+   
     
 }
 
 .description-sohl-two {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms ;
 }
 .sohl-title-link {
     width: 100%;
@@ -999,7 +1009,7 @@ letter-spacing: 0.02em;
     align-items: center;
    justify-content: center;
    color:  #8E8F99;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-icons{
@@ -1116,6 +1126,7 @@ margin-bottom: 16px;
 .description-solt-two {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms;
 }
 .solt-title-link {
     width: 100%;
@@ -1168,6 +1179,9 @@ transition: transform 300ms linear;
 }
 
 .model-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 24px;
     right: 24px;
@@ -1180,7 +1194,15 @@ border-radius: 50%;
 
 .model-close :hover,
 .model-close :focus {
-   transition:  color #404BBF;
+   
+   background: #404BBF;
+   
+}
+
+.svg-icon :hover,
+.svg-icon :focus {
+    background: #FFFFFF;
+
 }
 
 .is-hidden {
